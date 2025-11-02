@@ -2,12 +2,12 @@ package com.example.pixorawallpaperapp
 
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.android.volley.Request
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val recycler = findViewById<RecyclerView>(R.id.wallpaperRecycler)
-        recycler.layoutManager = GridLayoutManager(this, 3) // 3 column grid
+        recycler.layoutManager = GridLayoutManager(this, 3)
 
-        val url = "https://raw.githubusercontent.com/USERNAME/wallpaper-api/main/wallpapers.json"
+        val url = "https://raw.githubusercontent.com/emranrakib62/wallpaper-api/main/wallpapers.json"
 
         val request = StringRequest(Request.Method.GET, url,
             { response ->

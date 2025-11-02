@@ -4,6 +4,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.*
+import com.bumptech.glide.Glide
 
 class WallpaperAdapter(private val list: List<String>) :
     Adapter<WallpaperAdapter.ViewHolder>() {
