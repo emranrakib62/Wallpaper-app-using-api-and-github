@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val recycler = findViewById<RecyclerView>(R.id.wallpaperRecycler)
-        recycler.layoutManager = GridLayoutManager(this, 3)
+        recycler.layoutManager = GridLayoutManager(this, 2)
 
         val url = "https://raw.githubusercontent.com/emranrakib62/wallpaper-api/main/wallpapers.json"
 

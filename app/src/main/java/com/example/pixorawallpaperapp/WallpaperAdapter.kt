@@ -3,11 +3,10 @@ package com.example.pixorawallpaperapp
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.*
 import com.bumptech.glide.Glide
 
 class WallpaperAdapter(private val list: List<String>) :
-    Adapter<WallpaperAdapter.ViewHolder>() {
+    RecyclerView.Adapter<WallpaperAdapter.ViewHolder>() {
 
     class ViewHolder(val image: ImageView) : RecyclerView.ViewHolder(image)
 
